@@ -2,7 +2,7 @@ import { Container, HStack, Image, Link, Text } from "@chakra-ui/react";
 import react, { useEffect, useState } from "react";
 import MainMenu from "./MainMenu";
 import CallIcon16x16 from "../../icon/CallIcon16x16";
-import MailICon16x16 from "../../icon/MailICon16x16";
+import Mail16 from "../../icon/Mail16";
 
 const Header = ({ isHomePage }) => {
   const [changeMenu, setChangeMenu] = useState(false);
@@ -47,7 +47,7 @@ const Header = ({ isHomePage }) => {
         >
           <CallIcon16x16 color={"black"} />
           <Text fontSize={"12px"}>(+84) 905 998 598 &emsp; | &emsp;</Text>
-          <MailICon16x16 color={"black"} />
+          <Mail16 color={"black"} />
           <Text fontSize={"12px"}>vietnamsales@auevn.com</Text>
         </HStack>
         <Image src="/img/tophead.png" position={"absolute"} top="0" />
