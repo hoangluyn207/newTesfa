@@ -1,0 +1,91 @@
+@property --num1 {
+  syntax: "<integer>";
+  initial-value: 5;
+  inherits: false;
+}
+
+.CounterNumber1 {
+  animation: counter1 3s 1 alternate ease-in-out;
+  counter-reset: num1 var(--num1);
+}
+.CounterNumber1::after {
+  content: counter(num1);
+}
+
+@keyframes counter1 {
+  from {
+    --num1: 0;
+  }
+  to {
+    --num1: 5;
+  }
+}
+
+@property --num2 {
+  syntax: "<integer>";
+  initial-value: 1000;
+  inherits: false;
+}
+
+.CounterNumber2 {
+  animation: counter2 3s 1 alternate ease-in-out;
+  counter-reset: num2 var(--num2);
+}
+.CounterNumber2::after {
+  content: counter(num2);
+}
+
+@keyframes counter2 {
+  from {
+    --num2: 0;
+  }
+  to {
+    --num2: 1000;
+  }
+}
+
+@property --num3 {
+  syntax: "<integer>";
+  initial-value: 300;
+  inherits: false;
+}
+
+.CounterNumber3 {
+  animation: counter3 3s 1 alternate ease-in-out;
+  counter-reset: num3 var(--num3);
+}
+.CounterNumber3::after {
+  content: counter(num3);
+}
+
+@keyframes counter3 {
+  from {
+    --num3: 0;
+  }
+  to {
+    --num3: 300;
+  }
+}
+
+@property --num4 {
+  syntax: "<integer>";
+  initial-value: 98;
+  inherits: false;
+}
+
+.CounterNumber4 {
+  animation: counter4 3s 1 alternate ease-in-out;
+  counter-reset: num4 var(--num4);
+}
+.CounterNumber4::after {
+  content: counter(num4);
+}
+
+@keyframes counter4 {
+  from {
+    --num4: 0;
+  }
+  to {
+    --num4: 98;
+  }
+}

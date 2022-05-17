@@ -1,0 +1,14 @@
+.bannerContainer {
+  position: relative;
+}
+
+.bannerContainer::before {
+  position: absolute;
+  content: "LIÊN HỆ";
+  color: #fff;
+  padding-top: 250px;
+  padding-left: 200px;
+  font-size: 64px;
+  font-weight: 700;
+  z-index: 1;
+}

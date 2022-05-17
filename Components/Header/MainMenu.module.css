@@ -1,0 +1,67 @@
+.MenuButton {
+  z-index: 999;
+  cursor: pointer;
+  padding: 8px 16px;
+  margin-top: 24px;
+  border: none;
+  background: none;
+  font-weight: 500;
+  font-size: 14px;
+  position: relative;
+  overflow: hidden;
+}
+
+.MenuButton::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #3498db;
+  z-index: -1;
+  top: 0;
+  transition: 0.5s;
+}
+
+.MenuButton:hover::before {
+  height: 120%;
+}
+
+.MenuList {
+  border: none;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: white;
+  padding: 16px 24px;
+  transition: 0.6s;
+}
+
+.MenuList:hover {
+  background-color: #3498db;
+}
+
+.LanguageBtn {
+  z-index: 999;
+  cursor: pointer;
+  position: absolute;
+  border: none;
+  background: none;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  top: 0;
+  right: 0;
+}
+
+.LanguageBtn:hover span {
+  display: none;
+}
+
+.LanguageBtn:hover:before {
+  content: "ENG";
+}
+
+.LanguageBtn:hover {
+  background-color: green;
+  color: #fff;
+}
